@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --font-principal: 'Montserrat', sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+
+    /*  cores   */
+    
+    --cor-texto: #ffff;
+    --cor-principal: #CB0000;
+    --cor-segundaria: #B60000;
+    --cor-terciaria: #690000;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho .logo {
+    max-width: 120px;
+    height: auto;
+    position: relative;
+    left: 20px;
+}
+
+.cabecalho .logo img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, rgb(203, 0, 0), rgb(182, 0, 0), rgb(105, 0, 0));
+    color: var(--cor-texto);
+}
+.paragrafo {
+    color: var(--cor-texto);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    margin-right: 200px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    text-decoration: none;
+    margin-left: 60px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.cabecalho__menu__link:hover{
+    border-bottom: 2px solid white;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-secundaria)
+}
+
+
+.apresentacao__conteudo__textos {
+    font-size: 1.2rem;
+    font-family: var(--font-principal);
+}
+
+.apresentacao__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.apresentacao__link__links {
+    display: inline-block;
+    color: white;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid  transparent;
+    width: 50%;
+    text-align: center;
+    padding: 12px 30px;
+    background: #B60000;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.apresentacao__link__links:hover {
+    background: transparent;
+    border: 1px;
+    transform: translateX(8px);
+}
+
+.img.Mario {
+    height: 50%;
+    width: 100%;
+    min-height: 100vh;
+}
+
